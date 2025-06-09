@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -120,10 +121,11 @@
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="4" required></textarea>
+    <form action="https://formspree.io/f/xnnvpdew" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <input type="hidden" name="_subject" value="New Message from Zone Travels Website" />
       <button type="submit">Send Message</button>
     </form>
     <p>Email: <a href="mailto:ztms2025@gmail.com">ztms2025@gmail.com</a></p>
